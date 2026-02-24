@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code') {
-            steps {
-                git 'https://github.com/Dhanushrinivas/Hello-world.git'
-            }
-        }
-
         stage('Compile') {
             steps {
                 bat 'javac HelloWorld.java'
