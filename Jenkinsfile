@@ -3,15 +3,9 @@ pipeline {
 
     stages {
 
-        stage('Compile') {
+        stage('Run Python Script') {
             steps {
                 bat 'python hello.py'
-            }
-        }
-
-        stage('Run Program') {
-            steps {
-                bat 'python HelloWorld'
             }
         }
     }
